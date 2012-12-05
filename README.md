@@ -1,8 +1,9 @@
-HODOR: A flight information scraper for Carnival cruises
-========================================================
+Hodor 
+======
+A flight information scraper for Carnival cruises
 
 WARNING
-============
+---------
 This is not production code -- it's just a small tool I wrote to help myself optimize a painful 
 search process and I wanted to share it with others. **PLEASE DOUBLE CHECK ALL DATES, TIMES, AIRPORTS, ETC. 
 BEFORE ORDERING ANY FLIGHTS**. If you order the wrong flight for your cruise, I don't take any responsibility.
