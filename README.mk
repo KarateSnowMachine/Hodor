@@ -1,6 +1,11 @@
 HODOR: A flight information scraper for Carnival cruises
 ========================================================
 
+WARNING
+============
+This is not production code -- it's just a small tool I wrote to help myself optimize a painful 
+search process and I wanted to share it with others. **PLEASE DOUBLE CHECK ALL DATES, TIMES, AIRPORTS, ETC. 
+BEFORE ORDERING ANY FLIGHTS**. If you order the wrong flight for your cruise, I don't take any responsibility.
 
 What is this? 
 -------------
@@ -37,12 +42,17 @@ page, click the hodor button and a bunch of links should come up under each resu
 Clicking a link will trigger a google flights page to open. 2 seconds later, the flight 
 information will be returned to the page. Please heed the warning below.
 
-WARNING
-============
-This is not production code -- it's just a small tool I wrote to help myself optimize a painful 
-search process and I wanted to share it with others. **PLEASE DOUBLE CHECK ALL DATES, TIMES, AIRPORTS, ETC. 
-BEFORE ORDERING ANY FLIGHTS**. If you order the wrong flight for your cruise, I don't take any responsibility.
 
 License
 ------
 I'm releasing the code under GPLv3. See the LICENSE and COPYING files for the GPLv3 notices.
+
+Hacking
+-----
+Well, you've found the source code, so you're well on your way. The main trigger point is the 
+last few lines of bg.js. content.js is injected into the carnival search results pages and 
+content_gflight.js are injected into the google flights pages. They communicate back and 
+forth via bg.js. All of the page modification and scraping is done via jQuery -- which is an 
+excellent tool if you're not afraid of functional programming. 
+
+The code shouldn't be all the hard to decipher because there's not that much of it. Happy hacking. 
